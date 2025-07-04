@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.define "devops" do |devops|
-    devops.vm.box = "fasmat/ubuntu2004-desktop"
+    devops.vm.box = "eazytrainingfr/ubuntu"
     devops.vm.network "private_network", type: "dhcp"
     devops.vm.hostname = "devops"
     devops.vm.provider "virtualbox" do |v|
